@@ -39,11 +39,16 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #222;
+    background-color: rgb(35, 38, 38);
     color: white;
     opacity: 0.8;
 }
 
+#main:hover {
+    opacity: 1.0;
+}
+
 #main p {
     margin: 20%;
+    font-size: 20px;
 }
