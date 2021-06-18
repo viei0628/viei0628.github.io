@@ -44,12 +44,14 @@ function createNavBar() {
 function createMain() {
     const main = document.createElement('main');
     main.classList.add('main');
+    main.classList.add('col-sm-12');
     main.setAttribute("id", "main");
     return main;
 }
 
 function createWebsite() {
     const content = document.getElementById("content");
+    content.classList.add("container");
     content.appendChild(createHeader());
     content.appendChild(createMain());
     loadHomePage();
