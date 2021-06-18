@@ -7,14 +7,14 @@ function loadHomePage() {
     const main = document.getElementById('main');
     main.textContent = "";
 
-    const headline = document.createElement('h1');
-    headline.innerText = "HighLander";
-    home.appendChild(headline);
+    // const headline = document.createElement('h1');
+    // headline.innerText = "HighLander";
+    // home.appendChild(headline);
 
     //Add image
-    const myImage = new Image();
-    myImage.src = Highland;
-    home.appendChild(myImage);
+    // const myImage = new Image();
+    // myImage.src = Highland;
+    // home.appendChild(myImage);
 
     //About
     const description = document.createElement('p');

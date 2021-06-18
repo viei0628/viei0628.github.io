@@ -4,6 +4,7 @@ import loadMenuPage from "./menu";
 
 function createHeader() {
     const header = document.createElement('header');
+    header.classList.add('mainheader');
     const restaurantName = document.createElement('h1');
     restaurantName.textContent = "Highlander's Retreat";
     header.appendChild(restaurantName);
