@@ -16,12 +16,18 @@ function createNavBar() {
     const navBar = document.createElement('nav');
     const homeBtn = document.createElement('button');
     homeBtn.textContent = "HOME";
+    homeBtn.classList.add("btn");
+    homeBtn.classList.add("btn-dark");
 
     const contactBtn = document.createElement('button');
     contactBtn.textContent = "CONTACT";
+    contactBtn.classList.add("btn");
+    contactBtn.classList.add("btn-dark");
 
     const menuBtn = document.createElement('button');
     menuBtn.textContent = "MENU";
+    menuBtn.classList.add("btn");
+    menuBtn.classList.add("btn-dark");
 
     homeBtn.addEventListener('click', event => {
         loadHomePage();
@@ -44,7 +50,7 @@ function createNavBar() {
 function createMain() {
     const main = document.createElement('main');
     main.classList.add('main');
-    main.classList.add('col-sm-12');
+    main.classList.add('row');
     main.setAttribute("id", "main");
     return main;
 }

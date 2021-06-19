@@ -1,5 +1,7 @@
+*, ::after, ::before {
+    box-sizing:unset;
+}
 body {
-    background-color: red;
     width: 100%;
     display:flex;
     justify-content: center;
@@ -9,6 +11,13 @@ body {
     background-size: cover;
     margin: 0;
 }
+.btn-dark {
+    margin:5px;
+}
+.btn-dark:hover {
+    transform: scale(1.1);
+}
+
 .container {
     padding-left: 0;
     padding-right: 0;
@@ -19,6 +28,10 @@ body {
 #content {
     width: 100%;
     margin:0;
+}
+
+.home, .contactPage, .menu {
+    background-color: rgb(35, 38, 38);
 }
 
 .mainheader {
@@ -37,6 +50,9 @@ body {
 
 .mainheader h1 {
     margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: "Tangerine", cursive;
+    font-size: 3rem;
 }
 
 .mainheader nav {
@@ -45,13 +61,14 @@ body {
 
 #main {
     position: fixed;
-    margin-top: auto;
+    /* margin-top: auto; */
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(35, 38, 38);
+    justify-content: center;
     color: white;
     opacity: 0.8;
+    width:100%;
 }
 
 #main:hover {
@@ -59,7 +76,8 @@ body {
 }
 
 #main p {
-    margin: 20%;
+    margin: 5% 10%;
     font-size: 20px;
     text-align: center;
+    padding-bottom: 5px;
 }
